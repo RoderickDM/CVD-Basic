@@ -637,6 +637,97 @@ color:#ffa700;
   }
 }
 
+/*----ABOUT BANNER----*/
+.abt-banner{
+  background:#fffff;
+  padding-top:13rem;
+  padding-bottom:5rem;
+}
+.abt-banner .abt-banner__wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  align-items:center;
+}
+.abt-banner .abt-banner__text h4{
+  font-size:1.5rem;
+  font-weight:600;
+}
+.abt-banner .abt-banner__text h2{
+  font-size:9rem;
+  font-weight:800;
+  color:#ffa700;
+}
+.abt-banner .abt-banner__text p{
+  text-align:justify;
+  margin:4rem 0;
+}
+@media screen and (max-width:500px){
+  .abt-banner .abt-banner__wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .abt-banner .abt-banner__text{
+    order:1;
+    text-align:center;
+    margin:0 2rem;
+    margin-top:3rem;
+  }
+  .abt-banner .abt-banner__text h2{
+    font-size:5rem;
+  }
+  .abt-banner .abt-banner__wrapper img{
+    width:20rem;
+    margin:0 auto;
+  }
+}
+
+
+/*----ABOUT PROJECTS----*/
+.abt-projects{
+  padding:5rem 0;
+  background:#2b2b2b;
+}
+.abt-projects .abt-projects__title h2{
+  color:#ffa700;
+  font-size:4rem;
+  font-weight:600;
+}
+.abt-projects .abt-projects__title p{
+  color:#ffffff;
+}
+.abt-projects .abt-projects__card{
+  background:white;
+  border-radius:2rem;
+  margin-top:8rem;
+  transition:.5s ease;
+}
+.abt-projects .abt-projects__card:hover{
+  transform:scale(1.1);
+  transition:.5s ease;
+}
+.abt-projects .abt-projects__card img{
+  width:100%;
+}
+.abt-projects .abt-projects__card h4{
+  color:#ffa700;
+  font-weight:600;
+}
+.abt-projects .abt-projects__card p{
+  text-align:justify;
+  margin:3rem 0;
+}
+.abt-projects .abt-projects__card a{
+  color:#ffa700;
+}
+.abt-projects .abt-projects__card .abt-projects__card__text{
+  padding:2rem;
+}
+.abt-projects__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:8rem;
+}
+
 
 /*----REPEATABLE PATTERNS----*/
 .btn{
