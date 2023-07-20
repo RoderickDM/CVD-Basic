@@ -130,6 +130,7 @@ img {
     position:relative;
     position:fixed;
     width:100%;
+    z-index:99;
 }
 .header .branding{
     display:flex;
@@ -389,6 +390,11 @@ img {
 .ltrends .ltrends__title p{
   color:#ffffff;
 }
+.ltrends__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:8rem;
+}
 .ltrends .ltrends__card{
   background:white;
   border-radius:2rem;
@@ -416,11 +422,7 @@ img {
 .ltrends .ltrends__card .ltrends__card__text{
   padding:2rem;
 }
-.ltrends__wrapper{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-gap:8rem;
-}
+
 
 @media screen and (max-width:500px){
   .ltrends .ltrends__title{
@@ -681,11 +683,12 @@ color:#2b2b2b;
 .abt-banner .abt-banner__text__icons ul li:hover{
   transform:scale(1.1);
 }
-.abt-banner .abt-banner__chevron{
+.abt-banner .abt-banner__chevron a{
+  display:flex;
   font-size:5rem;
-  text-align:center;
-  color:#ffa700;
+  justify-content:center;
   transition:.5s ease;
+  color:#ffa700;
 }
 .abt-banner .abt-banner__chevron i:hover{
   color:#2b2b2b;
@@ -781,6 +784,101 @@ color:#2b2b2b;
   }
 }
 
+/*----Contacts Page----*/
+.ct-banner{
+  background:#2b2b2b;
+  /* padding-top:13rem; */
+  /* padding-bottom:5rem; */
+  height:calc(100vh - 85px);
+  display:flex;
+  align-items:center;
+  
+}
+.ct-banner .ct-banner__title h2{
+  font-size:8rem;
+  font-weight:700;
+  color:#ffa700;
+}
+.ct-banner .ct-banner__wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+}
+.ct-banner .ct-banner__left p{
+  text-align:justify;
+  color:#ffffff;
+}
+.ct-banner .ct-banner__left__info i{
+  color:#ffa700;
+  font-size:2.5rem;
+  width:2.5rem;
+}
+
+.ct-banner .ct-banner__left__info{
+  color:#ffffff;
+  margin-top:10rem;
+  margin-bottom:2rem;
+}
+.ct-banner .ct-banner__left__info li{
+  display:flex;
+  align-items:center;
+  gap:8rem;
+  margin-bottom:4rem;
+}
+.ct-banner .ct-banner__left__icons ul{
+  display:flex;
+  font-size:2.5rem;
+  gap:3rem;
+}
+.ct-banner .ct-banner__left__icons ul li a i{
+  color:#ffffff;
+}
+.ct-banner .ct-banner__right{
+  margin-left:10rem;
+}
+.ct-banner .ct-banner__right form{
+  display:grid;
+  grid-template-columns:1fr;
+}
+.ct-banner .ct-banner__right form input{
+  margin-bottom:2rem;
+  padding:2rem;
+}
+.ct-banner .ct-banner__right form input.message{
+  height:15rem;
+}
+.ct-banner .ct-banner__right a{
+  float:right;
+}
+@media screen and (max-width:500px){
+  .ct-banner{
+    height:unset;
+    padding-top:13rem;
+    padding-bottom:5rem;
+  }
+  .ct-banner .ct-banner__wrapper{
+    display:unset;
+    display:grid;
+    grid-template-columns:1fr;
+    align-items:center;
+  }
+  .ct-banner .ct-banner__title h2{
+    font-size:5rem;
+    text-align:center;
+  }
+  .ct-banner .ct-banner__left__icons ul{
+    justify-content:center;
+    margin-bottom:3rem;
+  }
+  .ct-banner .ct-banner__right{
+    margin-left:0rem;
+    margin:0 2rem;
+    text-align:center;
+  }
+  .ct-banner .ct-banner__right a{
+    float:unset;
+  }
+
+}
 
 /*----REPEATABLE PATTERNS----*/
 .btn{
